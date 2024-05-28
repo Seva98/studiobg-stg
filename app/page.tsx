@@ -30,8 +30,8 @@ export default function Home() {
       <Typography className="text-2xl">We are currently making some improvments to the website!</Typography>
       <div className="flex gap-4">
         <Button variant="ghost" className="p-2">
-          <Link href="https://www.instagram.com/balance_glow_studio" className="w-8 h-8" target="_blank">
-            <InstagramLogoIcon />
+          <Link href="https://www.instagram.com/balance_glow_studio" target="_blank">
+            <InstagramLogoIcon className="w-8 h-8" />
           </Link>
         </Button>
         <Button variant="ghost" className="p-2">
