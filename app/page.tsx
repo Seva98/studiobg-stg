@@ -15,14 +15,14 @@ const playfairDisplay = Playfair_Display({
 });
 export default function Home() {
   return (
-    <main className={cn('flex min-h-screen  flex-col items-center justify-between p-24 relative text-primary', poppins.className)}>
+    <main className={cn('flex min-h-screen  flex-col items-center justify-between p-6 md:p-24 relative text-primary', poppins.className)}>
       <Typography className="uppercase text-center text-3xl font-semibold">
         <>
           Balance &<br />
           Glow Studio
         </>
       </Typography>
-      <Typography className={cn('text-[6rem] leading-none text-center', playfairDisplay.className)}>
+      <Typography className={cn('text-[3rem] md:text-[6rem] leading-none text-center', playfairDisplay.className)}>
         Launching
         <br />
         Soon!
