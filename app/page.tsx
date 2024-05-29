@@ -27,7 +27,7 @@ export default function Home() {
         <br />
         Soon!
       </Typography>
-      <Typography className="text-2xl">We are currently making some improvments to the website!</Typography>
+      <Typography className="text-2xl text-center">We are currently making some improvments to the website!</Typography>
       <div className="flex gap-4">
         <Button variant="ghost" className="p-2">
           <Link href="https://www.instagram.com/balance_glow_studio" target="_blank">
