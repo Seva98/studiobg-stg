@@ -2,6 +2,7 @@ import Image from 'next/image';
 import Section from './ui/section';
 import Typography from './ui/typography';
 import { cn } from '@/lib/utils';
+import PageNumber from './pageNumber';
 
 const LecturePage = ({
   image,
@@ -34,10 +35,8 @@ const LecturePage = ({
           {title}
         </Typography>
         {children}
-        <Typography variant="h2" className="absolute top-0 right-0">
-          {page}
-        </Typography>
       </div>
+      <PageNumber page={page} />
     </Section>
   );
 };
