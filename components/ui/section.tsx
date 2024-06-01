@@ -1,9 +1,13 @@
 import { cn } from '@/lib/utils';
 import React from 'react';
 
-const Section = ({ children, className, ...props }: {} & React.HTMLProps<HTMLDivElement>) => {
+type Props = {
+  padding?: 'md' | 'lg';
+};
+
+const Section = ({ children, className, padding = 'md', ...props }: Props & React.HTMLProps<HTMLDivElement>) => {
   return (
-    <section className={cn('p-6 min-h-screen relative ', className)} {...props}>
+    <section className={cn('min-h-screen relative', padding === 'md' ? 'p-6' : 'p-16', className)} {...props}>
       {children}
     </section>
   );

@@ -8,6 +8,8 @@ import Reformer from './reformer';
 import Barre from './barre';
 import Yoga from './yoga';
 import Lectors from './lectors';
+import Contacts from './contacts';
+import Blog from './blog';
 
 const poppins = Poppins({ weight: ['100', '200', '300', '400', '500', '600', '700', '800', '900'], subsets: ['latin'] });
 
@@ -22,6 +24,8 @@ export default function Home() {
       <Barre />
       <Yoga />
       <Lectors />
+      <Contacts />
+      <Blog />
     </main>
   );
 }

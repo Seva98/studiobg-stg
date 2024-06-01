@@ -2,7 +2,6 @@ import PageNumber from '@/components/pageNumber';
 import Person, { PersonType } from '@/components/person';
 import Section from '@/components/ui/section';
 import Typography from '@/components/ui/typography';
-import Image from 'next/image';
 
 const Lectors = () => {
   const lectors: PersonType[] = [
@@ -29,7 +28,7 @@ const Lectors = () => {
   ];
 
   return (
-    <Section className="bg-secondary p-16 flex flex-col">
+    <Section className="bg-secondary flex flex-col" padding="lg">
       <Typography variant="h1" className="text-center uppercase flex-shrink">
         Lektoři
       </Typography>
@@ -38,6 +37,9 @@ const Lectors = () => {
           <Person key={`lector-${i}`} person={lector} />
         ))}
       </div>
+      <Typography variant="h1" className="absolute bottom-16 right-16 uppercase">
+        Rozvrh
+      </Typography>
       <PageNumber page="02" />
     </Section>
   );
