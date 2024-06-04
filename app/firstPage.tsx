@@ -27,15 +27,27 @@ const FirstPage = () => {
       <div className="relative">
         <div className="absolute h-[85%] w-[90%] top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
           <div className="flex justify-around uppercase p-4 flex-wrap gap-4">
-            <Typography variant="h3">Lekce</Typography>
-            <Typography variant="h3">Lektoři</Typography>
+            <a href="#Lekce">
+              <Typography variant="h3">Lekce</Typography>
+            </a>
+            <a href="#Lektori">
+              <Typography variant="h3">Lektoři</Typography>
+            </a>
             <Typography variant="h3">Rozvrh lekcí</Typography>
-            <Typography variant="h3">Kontakty</Typography>
+            <a href="#Kontakty">
+              <Typography variant="h3">Kontakty</Typography>
+            </a>
           </div>
           <div className="absolute flex flex-col gap-4 p-16  bottom-0 left-0 items-center justify-center uppercase">
-            <Typography variant="h3">Workshopy</Typography>
-            <Typography variant="h3">Blog</Typography>
-            <Typography variant="h3">Galerie</Typography>
+            <a href="#Workshopy">
+              <Typography variant="h3">Workshopy</Typography>
+            </a>
+            <a href="#Blog">
+              <Typography variant="h3">Blog</Typography>
+            </a>
+            <a href="#Galerie">
+              <Typography variant="h3">Galerie</Typography>
+            </a>
           </div>
           <Image
             src="/other/decor.jpg"

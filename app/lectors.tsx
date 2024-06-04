@@ -28,7 +28,7 @@ const Lectors = () => {
   ];
 
   return (
-    <Section className="bg-secondary flex flex-col" padding="lg">
+    <Section className="bg-secondary flex flex-col" padding="lg" id="Lektori">
       <Typography variant="h1" className="text-center uppercase flex-shrink">
         Lektoři
       </Typography>

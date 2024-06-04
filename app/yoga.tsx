@@ -13,7 +13,7 @@ const Yoga = () => {
     'SUNDAY FUNDAY - yogalates - 90 min lekce kombinuje vinyása jógu a pilates. Ranní protažení a posílení.',
   ];
   return (
-    <LecturePage className="bg-ternary" image="/other/pilates2.jpg" title="Yoga" page="01.e">
+    <LecturePage className="bg-ternary" image="/other/pilates2.jpg" title="Yoga" page="01.e" id="Yoga">
       <div className="flex flex-col gap-6 my-auto">
         {texts.map((text, i) => (
           <Typography variant="lead" key={`yoga-text-${i}`}>

@@ -10,7 +10,7 @@ const Reformer = () => {
     'Lekce není vhodná pro těhotné ženy.',
   ];
   return (
-    <LecturePage className="bg-ternary" image="/other/reformer.jpg" title="Reformer" page="01.c">
+    <LecturePage className="bg-ternary" image="/other/reformer.jpg" title="Reformer" page="01.c" id="Reformer">
       <div className="flex flex-col gap-6 my-auto">
         {texts.map((text, i) => (
           <Typography variant="lead" key={`reformer-text-${i}`}>

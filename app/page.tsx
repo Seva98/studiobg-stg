@@ -10,6 +10,8 @@ import Yoga from './yoga';
 import Lectors from './lectors';
 import Contacts from './contacts';
 import Blog from './blog';
+import Workshopy from './workshops';
+import Gallery from './gallery';
 
 const poppins = Poppins({ weight: ['100', '200', '300', '400', '500', '600', '700', '800', '900'], subsets: ['latin'] });
 
@@ -26,6 +28,8 @@ export default function Home() {
       <Lectors />
       <Contacts />
       <Blog />
+      <Workshopy />
+      <Gallery />
     </main>
   );
 }

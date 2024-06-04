@@ -3,7 +3,7 @@ import Typography from '@/components/ui/typography';
 
 const Barre = () => {
   return (
-    <LecturePage className="bg-secondary" image="/other/barre.jpg" title="Barre" page="01.d">
+    <LecturePage className="bg-secondary" image="/other/barre.jpg" title="Barre" page="01.d" id="Barre">
       <div className="my-auto w-full flex flex-col gap-20">
         <Typography variant="lead" className="max-w-[60%]">
           Cvičení Barre kombinuje prvky baletu, jógy a pilates. Probíhá s využitím tyče jako opory. Využívají se rovněž pomůcky jako činky či gumičky. Během

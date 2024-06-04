@@ -3,7 +3,7 @@ import Typography from '@/components/ui/typography';
 
 const Pilates = () => {
   return (
-    <LecturePage className="bg-ternary" image="/other/pilates.jpg" title="Pilates" page="01.a">
+    <LecturePage className="bg-ternary" image="/other/pilates.jpg" title="Pilates" page="01.a" id="Pilates">
       <div className="my-auto w-full flex flex-col gap-20">
         <Typography variant="lead" className="max-w-[60%]">
           Pilates lekce je cvičení, které kombinuje sílu, flexibilitu a kontroluje stav a kvalitu dechu. Během lekce se často pracuje na podložce, anebo s

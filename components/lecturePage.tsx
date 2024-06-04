@@ -10,15 +10,16 @@ const LecturePage = ({
   page,
   className,
   children,
+  ...props
 }: {
   image: string;
   title: string;
   page: string;
   className: string;
   children: React.ReactNode;
-}) => {
+} & React.HTMLProps<HTMLDivElement>) => {
   return (
-    <Section className={cn('grid grid-cols-[4fr_5fr] gap-4 pt-16 pl-16', className)}>
+    <Section className={cn('grid grid-cols-[4fr_5fr] gap-4 pt-16 pl-16', className)} {...props}>
       <div className="flex flex-col gap-8">
         <div className="grid grid-cols-[4fr_1fr] flex-grow gap-4">
           <div className="flex flex-col gap-8">

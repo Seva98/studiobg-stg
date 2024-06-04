@@ -6,6 +6,7 @@ type Props = {
 };
 
 const Section = ({ children, className, padding = 'md', ...props }: Props & React.HTMLProps<HTMLDivElement>) => {
+  console.log('Section', props);
   return (
     <section className={cn('min-h-screen relative', padding === 'md' ? 'p-6' : 'p-16', className)} {...props}>
       {children}

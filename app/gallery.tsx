@@ -1,25 +1,21 @@
 import Posts from '@/components/posts';
 
-const Blog = () => {
+const Gallery = () => {
   return (
     <Posts
-      header="Blog"
-      className="bg-secondary"
+      header="Galerie"
+      className="bg-ternary"
       posts={[
         {
-          title: 'Dlouhy nazev clanku o spusteni blogu',
           image: '/person/lenka.jpeg',
         },
         {
-          title: 'Post 2',
           image: '/person/tereza.jpeg',
         },
         {
-          title: 'Post 3',
           image: '/person/kristyna.jpeg',
         },
         {
-          title: 'Post 4',
           image: '/person/marie.jpeg',
         },
       ]}
@@ -27,4 +23,4 @@ const Blog = () => {
   );
 };
 
-export default Blog;
+export default Gallery;

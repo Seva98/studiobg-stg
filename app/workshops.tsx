@@ -1,13 +1,13 @@
 import Posts from '@/components/posts';
 
-const Blog = () => {
+const Workshopy = () => {
   return (
     <Posts
-      header="Blog"
-      className="bg-secondary"
+      header="Workshopy"
+      className="bg-ternary"
       posts={[
         {
-          title: 'Dlouhy nazev clanku o spusteni blogu',
+          title: 'Dlouhy nazev workshopu',
           image: '/person/lenka.jpeg',
         },
         {
@@ -27,4 +27,4 @@ const Blog = () => {
   );
 };
 
-export default Blog;
+export default Workshopy;

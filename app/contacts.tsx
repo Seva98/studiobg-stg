@@ -17,7 +17,7 @@ const ContactValue = ({ title, children }: { title: string; children: React.Reac
 
 const Contacts = () => {
   return (
-    <Section className="bg-ternary grid grid-cols-[2fr_2fr_3fr] gap-6" padding="lg">
+    <Section className="bg-ternary grid grid-cols-[2fr_2fr_3fr] gap-6" padding="lg" id="Kontakty">
       <Image src="/other/contacts1.jpeg" width={525} height={900} alt="Contacts 1" className="object-cover w-full h-full" />
       <Image src="/other/contacts2.jpeg" width={599} height={900} alt="Contacts 2" className="object-cover w-full h-full" />
       <div className="flex flex-col h-full gap-4 uppercase text-lg tracking-tighter font-thin">
