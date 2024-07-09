@@ -39,6 +39,9 @@ const FirstPage = () => {
             </a>
           </div>
           <div className="absolute flex flex-col gap-4 p-16  bottom-0 left-0 items-center justify-center uppercase">
+            <a href="#Cenik">
+              <Typography variant="h3">Ceník</Typography>
+            </a>
             <a href="#Workshopy">
               <Typography variant="h3">Workshopy</Typography>
             </a>

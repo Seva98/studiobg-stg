@@ -4,23 +4,13 @@ const Blog = () => {
   return (
     <Posts
       header="Blog"
-      className="bg-secondary"
+      className="bg-ternary"
+      pageNumber="05.a"
       posts={[
         {
-          title: 'Dlouhy nazev clanku o spusteni blogu',
+          title: 'Vítame Vás',
           image: '/person/lenka.jpeg',
-        },
-        {
-          title: 'Post 2',
-          image: '/person/tereza.jpeg',
-        },
-        {
-          title: 'Post 3',
-          image: '/person/kristyna.jpeg',
-        },
-        {
-          title: 'Post 4',
-          image: '/person/marie.jpeg',
+          href: '/blog/vitame-vas',
         },
       ]}
     />
