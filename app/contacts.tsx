@@ -17,9 +17,14 @@ const ContactValue = ({ title, children }: { title: string; children: React.Reac
 
 const Contacts = () => {
   return (
-    <Section className="bg-secondary grid grid-cols-[2fr_2fr_3fr] gap-6" padding="lg" id="Kontakty">
-      <Image src="/other/contacts1.jpeg" width={525} height={900} alt="Contacts 1" className="object-cover w-full h-full" />
-      <Image src="/other/contacts2.jpeg" width={599} height={900} alt="Contacts 2" className="object-cover w-full h-full" />
+    <Section className="bg-secondary grid lg:grid-cols-[4fr_3fr] gap-6" padding="lg" id="Kontakty">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2573.169841540513!2d18.283089776966044!3d49.83926617148197!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4713e324db50818b%3A0x633f7cd920095dfd!2sVeleslav%C3%ADnova%204%2C%20702%2000%20Moravsk%C3%A1%20Ostrava%20a%20P%C5%99%C3%ADvoz!5e0!3m2!1sen!2scz!4v1722436475006!5m2!1sen!2scz"
+        allowFullScreen
+        loading="lazy"
+        referrerPolicy="no-referrer-when-downgrade"
+        className="w-full h-[400px] lg:h-full"
+      ></iframe>
       <div className="flex flex-col h-full gap-4 uppercase text-lg tracking-tighter font-thin">
         <Typography variant="h1" className="uppercase ">
           Kontakty
@@ -31,16 +36,10 @@ const Contacts = () => {
           <ContactValue title="Telefon">
             <a href="tel:+420736129088">736 129 088</a>
           </ContactValue>
-          <ContactValue title="Adresa">Soon 🤫, Ostrava 📍</ContactValue>
+          <ContactValue title="Adresa">Veleslavínová 4, Ostrava 📍</ContactValue>
           <ContactValue title="Bankovní spojení">11122233/0800 </ContactValue>
         </div>
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10292.69519288601!2d18.271713175065067!3d49.83919182301016!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4711586a3124e79d%3A0x891973fb9f9e9144!2sOstrava!5e0!3m2!1sen!2scz!4v1717229438621!5m2!1sen!2scz"
-          allowFullScreen
-          loading="lazy"
-          referrerPolicy="no-referrer-when-downgrade"
-          className="w-full max-h-64"
-        ></iframe>
+
         <form action={sendContactForm} className="flex gap-1 flex-col flex-grow bg-orange-50 p-8 shadow-md border border-gray-200 h-full">
           <Typography>Kontaktujte nás</Typography>
           <Input type="text" name="name" required placeholder="Jméno:" className="border-none shadow-none text-xl placeholder:text-xl" />

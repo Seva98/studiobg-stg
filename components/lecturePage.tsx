@@ -19,16 +19,16 @@ const LecturePage = ({
   children: React.ReactNode;
 } & React.HTMLProps<HTMLDivElement>) => {
   return (
-    <Section className={cn('grid grid-cols-[4fr_5fr] gap-4 pt-16 pl-16', className)} {...props}>
+    <Section className={cn('grid grid-cols-1 md:grid-cols-[4fr_5fr] gap-4 pt-16 pb-16 md:pb-6 md:pl-16', className)} {...props}>
       <div className="flex flex-col gap-8">
         <div className="grid grid-cols-[4fr_1fr] flex-grow gap-4">
-          <div className="flex flex-col gap-8">
+          <div className="flex flex-col gap-8 md:pb-20">
             <Image src={image} alt={title} width={1114} height={1528} className="h-full object-cover" />
-            <Typography variant="h1" className="flex-shrink-0 text-center uppercase">
+            {/* <Typography variant="h1" className="flex-shrink-0 text-center uppercase">
               Rozvrh
-            </Typography>
+            </Typography> */}
           </div>
-          <Image src="/other/texture.jpg" alt="Texture" className="h-full object-cover pb-20" width={982} height={1232} />
+          <Image src="/other/texture.jpg" alt="Texture" className="h-full object-cover md:pb-20" width={982} height={1232} />
         </div>
       </div>
       <div className="flex flex-col  relative">

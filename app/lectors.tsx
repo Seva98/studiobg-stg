@@ -32,14 +32,14 @@ const Lectors = () => {
       <Typography variant="h1" className="text-center uppercase flex-shrink">
         Lektoři
       </Typography>
-      <div className="grid grid-cols-4 gap-16 flex-grow content-center">
+      <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-16 flex-grow content-center">
         {lectors.map((lector, i) => (
           <Person key={`lector-${i}`} person={lector} />
         ))}
       </div>
-      <Typography variant="h1" className="absolute bottom-16 right-16 uppercase">
+      {/* <Typography variant="h1" className="absolute bottom-16 right-16 uppercase">
         Rozvrh
-      </Typography>
+      </Typography> */}
       <PageNumber page="02" />
     </Section>
   );

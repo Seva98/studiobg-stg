@@ -10,9 +10,12 @@ export type PersonType = {
 const Person = ({ person }: { person: PersonType }) => {
   const { image, name, text } = person;
   return (
-    <div className="flex flex-col gap-16 mb-auto items-end ">
+    <div className="flex flex-col gap-4 sm:gap-8 md:gap-16 mb-auto ">
       <Image src={image} alt="Lektoři" width={400} height={400} className="w-full object-cover aspect-square rounded-full h-fit p-8" />
-      <Typography variant="h2" className="text-center uppercase">
+      <Typography variant="h2" className="hidden lg:block text-center uppercase">
+        {name}
+      </Typography>
+      <Typography variant="h4" className="block lg:hidden text-center uppercase">
         {name}
       </Typography>
       <Typography variant="lead" className="text-center">

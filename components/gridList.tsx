@@ -10,7 +10,7 @@ export type Item = {
 
 const GridList = ({ items }: { items: Item[] }) => {
   return (
-    <div className="grid grid-cols-3 gap-4 w-full flex-grow">
+    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-24 w-full flex-grow">
       {items.map(({ image, title, href }, i) => (
         <div key={`post-${i}`} className="relative">
           <Link href={href}>
