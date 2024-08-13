@@ -1,28 +1,29 @@
 import Typography from '@/components/ui/typography';
 import Section from '@/components/ui/section';
 import Image from 'next/image';
+import Link from 'next/link';
 
 const Classes = () => {
   return (
-    <Section className="bg-secondary grid grid-cols-1 md:grid-cols-[4fr_2fr] gap-12" id="Lekce">
+    <Section className="bg-ternary grid grid-cols-1 md:grid-cols-[4fr_2fr] gap-12" id="Lekce">
       <div className="flex flex-col gap-16 uppercase justify-center">
         {/* <Typography variant="h2" className="pl-8">
           01
         </Typography> */}
         <Typography variant="h1">Lekce</Typography>
         <div className="flex flex-col pl-8">
-          <a href="#Reformer">
+          <Link href="/reformer#Reformer">
             <Typography variant="h3">Reformer</Typography>
-          </a>
-          <a href="#Barre">
+          </Link>
+          <Link href="/barre#Barre">
             <Typography variant="h3">Barre</Typography>
-          </a>
-          <a href="#Pilates">
+          </Link>
+          <Link href="/pilates#Pilates">
             <Typography variant="h3">Pilates</Typography>
-          </a>
-          <a href="#Yoga">
+          </Link>
+          <Link href="/yoga#Yoga">
             <Typography variant="h3">Yoga</Typography>
-          </a>
+          </Link>
         </div>
         {/* <a href="#Workshopy">
           <Typography variant="h2" className="pl-8">

@@ -2,12 +2,13 @@ import Typography from '@/components/ui/typography';
 import Section from '@/components/ui/section';
 import Image from 'next/image';
 import { cn } from '@/lib/utils';
+import Link from 'next/link';
 
 const FirstPage = () => {
   const variableHeader = `text-[20px] sm:text-[24px] md:text-[30px]`;
 
   return (
-    <Section className=" md:grid md:grid-cols-2 text-primary">
+    <Section className=" md:grid md:grid-cols-2 text-primary bg-secondary">
       <div className="relative min-h-[50vh]">
         <Image
           src="/other/curtain.jpg"
@@ -30,30 +31,30 @@ const FirstPage = () => {
       <div className="relative">
         <div className="hidden md:block absolute h-[85%] w-[90%] top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
           <div className="flex flex-col xl:flex-row justify-around uppercase p-4 flex-wrap gap-4">
-            <a href="#Lekce">
+            <Link href="/#Lekce">
               <Typography variant="h4">Lekce</Typography>
-            </a>
-            <a href="#Lektori">
+            </Link>
+            <Link href="/#Lektori">
               <Typography variant="h4">Lektoři</Typography>
-            </a>
+            </Link>
             <Typography variant="h4">Rozvrh lekcí</Typography>
-            <a href="#Kontakty">
+            <Link href="/#Kontakty">
               <Typography variant="h4">Kontakty</Typography>
-            </a>
+            </Link>
           </div>
           <div className="absolute flex flex-col gap-4 p-0 xl:p-16  bottom-0 left-0 items-start xl:items-center justify-center uppercase">
-            <a href="#Cenik">
+            <Link href="/cenik#Cenik">
               <Typography variant="h4">Ceník</Typography>
-            </a>
-            <a href="#Workshopy">
+            </Link>
+            {/* <Link href="#Workshopy">
               <Typography variant="h4">Workshopy</Typography>
-            </a>
-            <a href="#Blog">
+            </Link> */}
+            <Link href="/#Blog">
               <Typography variant="h4">Blog</Typography>
-            </a>
-            <a href="#Galerie">
+            </Link>
+            <Link href="/#Galerie">
               <Typography variant="h4">Galerie</Typography>
-            </a>
+            </Link>
           </div>
 
           {/* <Image
@@ -66,29 +67,29 @@ const FirstPage = () => {
           {/* <div className="bg-white absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 h-full w-full opacity-60 -z-10" /> */}
         </div>
         <div className="flex md:hidden  flex-col justify-around uppercase p-4 flex-wrap gap-4">
-          <a href="#Lekce">
+          <Link href="/#Lekce">
             <Typography variant="h4">Lekce</Typography>
-          </a>
-          <a href="#Lektori">
+          </Link>
+          <Link href="/#Lektori">
             <Typography variant="h4">Lektoři</Typography>
-          </a>
+          </Link>
           <Typography variant="h4">Rozvrh lekcí</Typography>
-          <a href="#Kontakty">
+          <Link href="/#Kontakty">
             <Typography variant="h4">Kontakty</Typography>
-          </a>
+          </Link>
           <hr />
-          <a href="#Cenik">
+          <Link href="/cenik#Cenik">
             <Typography variant="h4">Ceník</Typography>
-          </a>
-          <a href="#Workshopy">
+          </Link>
+          {/* <Link href="#Workshopy">
             <Typography variant="h4">Workshopy</Typography>
-          </a>
-          <a href="#Blog">
+          </Link> */}
+          <Link href="/#Blog">
             <Typography variant="h4">Blog</Typography>
-          </a>
-          <a href="#Galerie">
+          </Link>
+          <Link href="/#Galerie">
             <Typography variant="h4">Galerie</Typography>
-          </a>
+          </Link>
         </div>
       </div>
       <Image src="/bg.jpg" alt="Background" className="absolute top-0 left-0 object-cover h-full w-full -z-20" width={1232} height={928} />

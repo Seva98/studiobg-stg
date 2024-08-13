@@ -15,16 +15,10 @@ export default function Home() {
   return (
     <main>
       <Classes />
-      <Pilates />
-      <Pilates2 />
-      <Reformer />
-      <Barre />
-      <Yoga />
       <Lectors />
-      <Pricing />
       <Contacts />
       <Blog />
-      <Workshopy />
+      {/* <Workshopy /> */}
       <Gallery />
     </main>
   );

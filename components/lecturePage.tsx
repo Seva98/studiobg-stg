@@ -3,6 +3,7 @@ import Section from './ui/section';
 import Typography from './ui/typography';
 import { cn } from '@/lib/utils';
 import PageNumber from './pageNumber';
+import Link from 'next/link';
 
 const LecturePage = ({
   image,
@@ -10,6 +11,7 @@ const LecturePage = ({
   page,
   className,
   children,
+  showNavigation = true,
   ...props
 }: {
   image: string;
@@ -17,6 +19,7 @@ const LecturePage = ({
   page: string;
   className: string;
   children: React.ReactNode;
+  showNavigation?: boolean;
 } & React.HTMLProps<HTMLDivElement>) => {
   return (
     <Section className={cn('grid grid-cols-1 md:grid-cols-[4fr_5fr] gap-4 pt-16 pb-16 md:pb-6 md:pl-16', className)} {...props}>
@@ -32,9 +35,16 @@ const LecturePage = ({
         </div>
       </div>
       <div className="flex flex-col  relative">
-        <Typography variant="h1" className="uppercase pt-4">
-          {title}
-        </Typography>
+        <div className="flex gap-6 items-center">
+          {showNavigation && (
+            <Link href="/" className="text-xl">
+              ←
+            </Link>
+          )}
+          <Typography variant="h1" className="uppercase pt-4">
+            {title}
+          </Typography>
+        </div>
         {children}
       </div>
       <PageNumber page={page} />

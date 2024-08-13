@@ -1,5 +1,5 @@
 import { cn } from '@/lib/utils';
-import { Old_Standard_TT, Playfair_Display } from 'next/font/google';
+import { Old_Standard_TT } from 'next/font/google';
 
 export type TypographyVariant =
   | 'h1'
@@ -24,6 +24,12 @@ const oldStandard = Old_Standard_TT({
   style: 'normal', // Adjust the style as needed
   subsets: ['latin'], // Adjust the subsets as needed
 });
+
+// const trirong = Trirong({
+//   weight: ['100', '200'], // Adjust the weight as needed
+//   style: 'normal', // Adjust the style as needed
+//   subsets: ['latin'], // Adjust the subsets as needed
+// });
 
 const Typography = ({
   children,
@@ -68,7 +74,7 @@ const Typography = ({
         <div className={cn(`text-sm font-medium text-muted-foreground text-green-500 mt-1 leading-none`, oldStandard.className, className)}>{children}</div>
       );
     default:
-      return <div className={cn('text-neutral-700', oldStandard.className, className)}>{children}</div>;
+      return <div className={cn('font-thin text-neutral-700', oldStandard.className, className)}>{children}</div>;
   }
 };
 

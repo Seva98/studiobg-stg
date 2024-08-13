@@ -4,7 +4,7 @@ const Blog = () => {
   return (
     <Posts
       header="Blog"
-      className="bg-ternary"
+      className="bg-secondary"
       pageNumber="05.a"
       posts={[
         {

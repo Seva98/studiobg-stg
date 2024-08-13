@@ -15,9 +15,9 @@ const ContactValue = ({ title, children }: { title: string; children: React.Reac
   </div>
 );
 
-const Contacts = () => {
+const Contacts = ({ secondaryBg = false }: { secondaryBg?: boolean }) => {
   return (
-    <Section className="bg-secondary grid lg:grid-cols-[4fr_3fr] gap-6" padding="lg" id="Kontakty">
+    <Section className={`${secondaryBg ? 'bg-secondary' : 'bg-ternary'} grid lg:grid-cols-[4fr_3fr] gap-6`} padding="lg" id="Kontakty">
       <iframe
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2573.169841540513!2d18.283089776966044!3d49.83926617148197!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4713e324db50818b%3A0x633f7cd920095dfd!2sVeleslav%C3%ADnova%204%2C%20702%2000%20Moravsk%C3%A1%20Ostrava%20a%20P%C5%99%C3%ADvoz!5e0!3m2!1sen!2scz!4v1722436475006!5m2!1sen!2scz"
         allowFullScreen

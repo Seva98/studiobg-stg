@@ -32,7 +32,7 @@ const items = [
 const Pricing = () => {
   return (
     <LecturePage className="bg-ternary" image="/other/barre.jpg" title="Ceník" page="03" id="Cenik">
-      <div className="flex flex-col h-full justify-center md:-mt-12">
+      <div className="flex flex-col h-full justify-center ">
         {items.map(({ text, price }, i) => (
           <div className={cn('grid grid-cols-2 gap-32', i === items.length - 1 ? 'mt-16' : '')} key={text}>
             <Typography variant="h3">{text}</Typography>
