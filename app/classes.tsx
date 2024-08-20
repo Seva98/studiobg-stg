@@ -38,10 +38,12 @@ const Classes: React.FC = () => {
   ];
 
   return (
-    <Section className="bg-ternary grid grid-cols-1 md:grid-cols-[4fr_2fr] gap-12" id="Lekce" ref={sectionRef}>
-      <div className="flex flex-col gap-16 uppercase justify-center">
-        <Typography variant="h1">Lekce</Typography>
-        <div className="flex flex-col pl-8">
+    <Section className="bg-ternary grid grid-cols-1 md:grid-cols-[4fr_2fr] gap-12 text-[#68443c]" id="Lekce" ref={sectionRef}>
+      <div className="flex flex-col gap-16 uppercase justify-center border-l-4 h-fit my-auto pl-4 border-[#68443c]">
+        <Typography variant="h1" className="pt-4">
+          Lekce
+        </Typography>
+        <div className="flex flex-col pl-8 pb-4">
           {links.map((link, index) => (
             <Link href={link.href} key={link.text}>
               <Typography
