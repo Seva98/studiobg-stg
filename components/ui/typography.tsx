@@ -35,10 +35,12 @@ const Typography = ({
   children,
   variant,
   className,
+  style,
 }: Readonly<{
   children: React.ReactNode;
   variant?: TypographyVariant;
   className?: string;
+  style?: any;
 }>) => {
   switch (variant) {
     case 'h1':
@@ -46,7 +48,11 @@ const Typography = ({
     case 'h2':
       return <h2 className={cn(`scroll-m-20 text-3xl font-extrabold tracking-widest lg:text-4xl`, oldStandard.className, className)}>{children}</h2>;
     case 'h3':
-      return <h3 className={cn(`mt-4 scroll-m-20 text-2xl font-semibold tracking-widest`, oldStandard.className, className)}>{children}</h3>;
+      return (
+        <h3 className={cn(`mt-4 scroll-m-20 text-2xl font-semibold tracking-widest`, oldStandard.className, className)} style={style}>
+          {children}
+        </h3>
+      );
     case 'h4':
       return <h4 className={cn(`mt-2 scroll-m-20 text-xl font-semibold tracking-widest`, oldStandard.className, className)}>{children}</h4>;
     case 'h5':

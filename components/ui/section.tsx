@@ -3,14 +3,19 @@ import React from 'react';
 
 type Props = {
   padding?: 'md' | 'lg';
+  withLogo?: boolean;
+  className?: string;
+  children: React.ReactNode;
 };
 
-const Section = ({ children, className, padding = 'md', ...props }: Props & React.HTMLProps<HTMLDivElement>) => {
+const Section = React.forwardRef<HTMLElement, Props & React.HTMLProps<HTMLDivElement>>(({ children, className, padding = 'md', withLogo, ...props }, ref) => {
   return (
-    <section className={cn('min-h-screen relative', padding === 'md' ? 'p-6' : 'p-16', className)} {...props}>
+    <section ref={ref} className={cn('min-h-screen relative', padding === 'md' ? 'p-6' : 'p-16', className)} {...props}>
       {children}
     </section>
   );
-};
+});
+
+Section.displayName = 'Section';
 
 export default Section;
