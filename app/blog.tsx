@@ -10,7 +10,7 @@ const Blog = () => {
         {
           title: 'Vítame Vás',
           image: '/person/lenka.jpeg',
-          href: '/blog/vitame-vas',
+          href: '/blog/vitame-vas#article',
         },
       ]}
     />

@@ -8,7 +8,7 @@ export default function ArticleLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <main className="bg-ternary relative">
+    <main className="bg-ternary relative" id="article">
       <Link href="/" className="flex gap-1 items-center absolute left-2 top-4 text-primary">
         <ArrowLeftIcon /> Hlavní stránka
       </Link>

@@ -64,12 +64,12 @@ const FirstPage = () => {
           height={450}
           className="w-[300px] h-[450px] object-contain absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
         /> */}
-        <div className="flex gap-0 sm:gap-4 absolute top-0 left-10 items-center flex-col md:flex-row">
+        <Link href="/" className="flex gap-0 sm:gap-4 absolute top-0 left-10 items-center flex-col md:flex-row">
           <Image src="/bg_logo_invis_2.svg" alt="Logo" width={80} height={120} className="w-[80px] h-[120px] object-contain" />
           <Typography variant="h3" className={cn('whitespace-nowrap uppercase mt-0 sm:mt-4', variableHeader)}>
             Veleslavínova 4
           </Typography>
-        </div>
+        </Link>
       </div>
       <div className="relative">
         <div className="flex flex-col gap-4 uppercase border-l-4 border-[#68443c] p-4 absolute sm:top-[8rem]">

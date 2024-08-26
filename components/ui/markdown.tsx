@@ -38,7 +38,11 @@ const MarkdownComponents: Components = {
     return <Typography variant="p">{children as React.ReactNode}</Typography>;
   },
   h1: ({ children }) => <Typography variant="h1">{children as React.ReactNode}</Typography>,
-  h2: ({ children }) => <Typography variant="h2">{children as React.ReactNode}</Typography>,
+  h2: ({ children }) => (
+    <Typography variant="h2" className="mt-6 mb-0">
+      {children as React.ReactNode}
+    </Typography>
+  ),
   h3: ({ children }) => <Typography variant="h3">{children as React.ReactNode}</Typography>,
   h4: ({ children }) => <Typography variant="h4">{children as React.ReactNode}</Typography>,
   h5: ({ children }) => <Typography variant="h5">{children as React.ReactNode}</Typography>,
