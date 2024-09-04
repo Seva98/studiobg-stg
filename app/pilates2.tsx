@@ -13,7 +13,7 @@ const Pilates2 = () => {
     'PILATES - KURZ PRO ZAČÁTEČNÍKY - doporučujeme všem, kteří se cvičením a zdravým životním stylem teprve začínají. Jedná se o 18 po sobě jdoucích lekcí.',
   ];
   return (
-    <LecturePage className="bg-secondary" image="/other/pilates2.jpg" title="Pilates" page="01.b" showNavigation={false}>
+    <LecturePage className="bg-secondary" image="/foto/276A7594.jpg" title="Pilates" page="01.b" showNavigation={false}>
       <div className="flex flex-col gap-6 my-auto">
         {texts.map((text, i) => (
           <Typography variant="lead" key={`pilates2-text-${i}`}>

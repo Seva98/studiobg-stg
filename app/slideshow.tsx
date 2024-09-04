@@ -6,15 +6,15 @@ import { useState, useEffect } from 'react';
 const Slideshow = () => {
   const images = [
     {
-      src: '/other/curtain.jpg',
+      src: '/foto/276A7679.jpg',
       alt: 'První obrázek slideshow',
     },
     {
-      src: '/other/decor.jpg',
+      src: '/foto/276A7510.jpg',
       alt: 'Druhý obrázek slideshow',
     },
     {
-      src: '/other/studio.jpg',
+      src: '/foto/276A7580.jpg',
       alt: 'Třetí obrázek slideshow',
     },
   ];

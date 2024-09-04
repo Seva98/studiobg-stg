@@ -9,8 +9,13 @@ const Blog = () => {
       posts={[
         {
           title: 'Vítame Vás',
-          image: '/person/lenka.jpeg',
+          image: '/foto/276A7532.jpg',
           href: '/blog/vitame-vas#article',
+        },
+        {
+          title: 'Barre',
+          image: '/foto/276A7000.jpg',
+          href: '/blog/barre#article',
         },
       ]}
     />

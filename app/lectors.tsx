@@ -15,16 +15,16 @@ const Lectors = () => {
       image: '/person/tereza.jpeg',
       text: 'Tereza je lektorka pilates a jógy. Její lekce jsou zaměřeny na posílení celého těla a zlepšení flexibility. ',
     },
-    {
-      name: 'Kristýna Plačková',
-      image: '/person/kristyna.jpeg',
-      text: 'Kristýna je lektorkou barre. Má za sebou mnoho let praxe a výuky.',
-    },
-    {
-      name: 'Marie Holan',
-      image: '/person/marie.jpeg',
-      text: 'Marie je lektorka pilates a jógy. Má za sebou mnoho let praxe a výuky.',
-    },
+    // {
+    //   name: 'Kristýna Plačková',
+    //   image: '/person/kristyna.jpeg',
+    //   text: 'Kristýna je lektorkou barre. Má za sebou mnoho let praxe a výuky.',
+    // },
+    // {
+    //   name: 'Marie Holan',
+    //   image: '/person/marie.jpeg',
+    //   text: 'Marie je lektorka pilates a jógy. Má za sebou mnoho let praxe a výuky.',
+    // },
   ];
 
   return (
@@ -32,7 +32,7 @@ const Lectors = () => {
       <Typography variant="h1" className="text-center uppercase flex-shrink">
         Lektoři
       </Typography>
-      <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-16 flex-grow content-center">
+      <div className="flex flex-col sm:flex-row gap-16  justify-center items-center m-auto">
         {lectors.map((lector, i) => (
           <Person key={`lector-${i}`} person={lector} />
         ))}

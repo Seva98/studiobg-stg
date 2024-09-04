@@ -60,7 +60,7 @@ const Classes: React.FC = () => {
         </div>
       </div>
       <div>
-        <Image src="/other/studio.jpg" width={928} height={1232} alt="Studio" className="min-h-[90vh] relative -top-6 object-cover overflow-hidden" />
+        <Image src="/foto/276A7609.jpg" width={928} height={1232} alt="Studio" className="min-h-[90vh] relative -top-6 object-cover overflow-hidden" />
       </div>
     </Section>
   );
