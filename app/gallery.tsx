@@ -8,20 +8,28 @@ const Gallery = () => {
       pageNumber="05.c"
       posts={[
         {
-          image: '/person/lenka.jpeg',
-          href: '/blog/vitame-vas',
+          image: '/foto/276A7528.jpg',
+          href: '',
         },
         {
-          image: '/person/tereza.jpeg',
-          href: '/blog/vitame-vas',
+          image: '/foto/276A7539.jpg',
+          href: '',
         },
         {
-          image: '/person/kristyna.jpeg',
-          href: '/blog/vitame-vas',
+          image: '/foto/276A7523.jpg',
+          href: '',
         },
         {
-          image: '/person/marie.jpeg',
-          href: '/blog/vitame-vas',
+          image: '/foto/276A7482.jpg',
+          href: '',
+        },
+        {
+          image: '/foto/276A7519.jpg',
+          href: '',
+        },
+        {
+          image: '/foto/276A7450.jpg',
+          href: '',
         },
       ]}
     />
