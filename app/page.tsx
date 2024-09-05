@@ -10,6 +10,7 @@ import Blog from './blog';
 import Workshopy from './workshops';
 import Gallery from './gallery';
 import Pricing from './pricing';
+import Calendar from './calendar';
 
 export default function Home() {
   return (
@@ -20,6 +21,7 @@ export default function Home() {
       <Blog />
       {/* <Workshopy /> */}
       <Gallery />
+      <Calendar />
     </main>
   );
 }
