@@ -18,7 +18,7 @@ const GridList = ({ items }: { items: Item[] }) => {
             {title && (
               <Typography
                 variant="h4"
-                className="p-6 uppercase text-center absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-ternary w-[101%]"
+                className="p-6 uppercase text-center absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-secondary w-[101%]"
               >
                 {title}
               </Typography>

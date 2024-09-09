@@ -24,8 +24,8 @@ const Blog = () => {
         },
         {
           title: 'Allegro 1',
-          image: '/other/allegro-1.jpg',
-          href: '/blog/allergo-1#article',
+          image: '/other/product04-14inch.jpeg',
+          href: '/blog/allegro-1#article',
         },
         {
           title: 'Bala Heaven',
@@ -34,7 +34,7 @@ const Blog = () => {
         },
         {
           title: 'Lota',
-          image: '/other/lota.jpg',
+          image: '/other/lota2.jpg',
           href: '/blog/lota#article',
         },
       ]}

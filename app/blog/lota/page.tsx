@@ -9,7 +9,7 @@ Díky tomuto zpracování je LOTA schopna poskytnout větší komfort během no�
 
 Denisa Paciorková, zakladatelka značky LOTA, o celém příběhu vypráví na svých webových stránkách [loa.care.cz](https://loa.care.cz/).
 
-Nám se tento koncept velmi líbí, protože Denisa ctí stejnou filozofii a její slogan zní: **Because we care.**`;
+Nám se tento koncept velmi líbí, protože Denisa ctí stejnou filozofii a její slogan zní: *Because we care.*`;
 
 const Article = () => {
   return (
