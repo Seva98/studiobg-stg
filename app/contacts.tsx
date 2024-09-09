@@ -24,10 +24,10 @@ const Contacts = ({ secondaryBg = false }: { secondaryBg?: boolean }) => {
         </Typography>
         <div className="flex flex-col gap-1 ">
           <ContactValue title="Email recepce">
-            <a href="mailto:info@studiobg.cz">info@studiobg.cz</a>
+            <a href="mailto:letmeglow@studiobg.cz">letmeglow@studiobg.cz</a>
           </ContactValue>
           <ContactValue title="Telefon">
-            <a href="tel:+420736129088">736 129 088</a>
+            <a href="tel:+420734677225">734 677 225</a>
           </ContactValue>
           <ContactValue title="Adresa">Veleslavínová 4, Ostrava 📍</ContactValue>
           <ContactValue title="Bankovní spojení">11122233/0800 </ContactValue>

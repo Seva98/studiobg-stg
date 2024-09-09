@@ -3,11 +3,9 @@ import Typography from '@/components/ui/typography';
 
 const Reformer = () => {
   const texts = [
-    'Pilates reformer je speciální cvičební přístroj používaný při cvičení Pilates. Jeho hlavním účelem je poskytnout odpor, a zároveň podporu při cvičení, což umožňuje provádět cviky s větší efektivitou.',
-    'Cvičení na reformeru posiluje svaly, zlepšuje posturu, snižuje se riziko poranění kloubů a páteře, zlepšuje koordinaci a stabilitu.',
-    'Samozřejmě, stejně jako jakékoliv jiné cvičení - pomáhá odbourávat stres.',
-    'Cvičení na reformeru je o větší koordinaci těla. Zároveň se člověk více soustředí na správnost provedení cviku.',
-    'Lekce není vhodná pro těhotné ženy.',
+    'Reformer je stroj, který vytvořil pan Joseph Pilates, zakladatel metody Pilates. Jeho záměrem bylo, aby reformer vedl k nápravě funkčnosti celého těla, vyšší síle, stabilitě, flexibilitě a také k posílení celého těla.',
+    'Reformer se stal populárním díky jeho rozmanitosti. Tento druh cvičení je ideální skutečně pro všechny. Od osob hledající rehabilitaci pro své tělo, až po profesionální sportovce. Cvičení na reformeru je především o kontrolovaných a plynulých pohybech, díky kterým zpevňujete celé tělo. Intenzitu si volíte sami.',
+    'Lekce je vhodná pro všechny věkové skupiny, bez ohledu na fyzickou zdatnost, Pokud však řešíte nějaký konkrétní zdravotní problém, nebo jste těhotná, doporučujeme nejdříve 3 až 5 individuálních lekcí.',
   ];
   return (
     <LecturePage className="bg-ternary" image="/other/reformer.jpg" title="Reformer" page="01.c" id="Reformer">

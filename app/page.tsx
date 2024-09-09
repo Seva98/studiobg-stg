@@ -16,7 +16,7 @@ export default function Home() {
   return (
     <main>
       <Classes />
-      <Lectors />
+      {/* <Lectors /> */}
       {/* <Contacts / */}
       <Blog />
       {/* <Workshopy /> */}

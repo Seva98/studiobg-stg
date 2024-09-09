@@ -31,7 +31,7 @@ const LecturePage = ({
               Rozvrh
             </Typography> */}
           </div>
-          <Image src="/other/texture.jpg" alt="Texture" className="h-full object-cover md:pb-20" width={982} height={1232} />
+          <Image src="/other/texture-2.jpg" alt="Texture" className="h-full object-cover object-left md:pb-20" width={982} height={1232} />
         </div>
       </div>
       <div className="flex flex-col  relative">

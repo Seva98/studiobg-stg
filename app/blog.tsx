@@ -4,7 +4,7 @@ const Blog = () => {
   return (
     <Posts
       header="Blog"
-      className="bg-ternary"
+      className="bg-secondary"
       pageNumber="05.a"
       posts={[
         {
@@ -34,7 +34,7 @@ const Blog = () => {
         },
         {
           title: 'Lota',
-          image: '/foto/276A7607.jpg',
+          image: '/other/lota.jpg',
           href: '/blog/lota#article',
         },
       ]}
