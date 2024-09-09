@@ -5,44 +5,60 @@ import { cn } from '@/lib/utils';
 const items = [
   {
     text: 'Pilates, yoga',
-    price: '250 ,-',
+    price: '200 ,-',
+  },
+  {
+    text: '',
+    price: '',
   },
   {
     text: 'Barre',
-    price: '280 ,-',
+    price: '220 ,-',
+  },
+  {
+    text: '',
+    price: '',
   },
   {
     text: 'Reformer',
-    price: '600 ,-',
+    price: '400 ,-',
   },
   {
     text: '',
     price: '',
   },
   {
-    text: "Víkend barre 75'",
-    price: '300 ,-',
+    text: '',
+    price: '',
   },
   {
     text: '',
     price: '',
   },
-  {
-    text: '2000 kredit',
-    price: '1900 ,-',
-  },
-  {
-    text: '3000 kredit',
-    price: '2800 ,-',
-  },
-  {
-    text: '4000 kredit',
-    price: '3650 ,-',
-  },
-  {
-    text: '',
-    price: '',
-  },
+  // {
+  //   text: "Víkend barre 75'",
+  //   price: '300 ,-',
+  // },
+  // {
+  //   text: '',
+  //   price: '',
+  // },
+  // {
+  //   text: '2000 kredit',
+  //   price: '1900 ,-',
+  // },
+  // {
+  //   text: '3000 kredit',
+  //   price: '2800 ,-',
+  // },
+  // {
+  //   text: '4000 kredit',
+  //   price: '3650 ,-',
+  // },
+  // {
+  //   text: '',
+  //   price: '',
+  // },
   {
     text: 'Individuální lekce reformer:',
     price: '',
@@ -60,6 +76,64 @@ const items = [
     price: '2100 ,-',
   },
 ];
+// const items = [
+//   {
+//     text: 'Pilates, yoga',
+//     price: '250 ,-',
+//   },
+//   {
+//     text: 'Barre',
+//     price: '280 ,-',
+//   },
+//   {
+//     text: 'Reformer',
+//     price: '600 ,-',
+//   },
+//   {
+//     text: '',
+//     price: '',
+//   },
+//   {
+//     text: "Víkend barre 75'",
+//     price: '300 ,-',
+//   },
+//   {
+//     text: '',
+//     price: '',
+//   },
+//   {
+//     text: '2000 kredit',
+//     price: '1900 ,-',
+//   },
+//   {
+//     text: '3000 kredit',
+//     price: '2800 ,-',
+//   },
+//   {
+//     text: '4000 kredit',
+//     price: '3650 ,-',
+//   },
+//   {
+//     text: '',
+//     price: '',
+//   },
+//   {
+//     text: 'Individuální lekce reformer:',
+//     price: '',
+//   },
+//   {
+//     text: '1 osoba',
+//     price: '1000 ,-',
+//   },
+//   {
+//     text: '2 osoby',
+//     price: '1700 ,-',
+//   },
+//   {
+//     text: '3 osoby',
+//     price: '2100 ,-',
+//   },
+// ];
 
 const Pricing = () => {
   return (
