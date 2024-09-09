@@ -12,7 +12,7 @@ V dnešní době cvičení barre nabízí nekonečno možností. Barre spojuje p
 V budoucnu se u nás také můžete těšit na lekce „Ballet Barre“, které se budou zaměřovat více i na klasické baletní cviky, které jsou náročné, ale každá z nás jsme si aspoň na chvilinku přály být baletky, tak proč bychom to nezkusily teď?
 `;
 
-const VitameVas = () => {
+const Article = () => {
   return (
     <div className="flex flex-col gap-8">
       <Handwritten>Barre</Handwritten>
@@ -26,4 +26,4 @@ const VitameVas = () => {
   );
 };
 
-export default VitameVas;
+export default Article;

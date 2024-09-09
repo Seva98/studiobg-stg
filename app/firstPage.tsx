@@ -22,16 +22,20 @@ const links: GroupedLinks[] = [
     text: 'Lekce',
   },
   {
-    href: '/#Lektori',
-    text: 'Lektoři',
-  },
-  {
-    href: '/#Kontakty',
-    text: 'Kontakty',
+    href: '/rozvrh#zenamu-calendar',
+    text: 'Rozvrh lekcí',
   },
   {
     href: '/cenik#Cenik',
     text: 'Ceník',
+  },
+  // {
+  //   href: '/#Lektori',
+  //   text: 'Lektoři',
+  // },
+  {
+    href: '/#Kontakty',
+    text: 'Kontakty',
   },
   {
     href: '/#Blog',

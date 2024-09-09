@@ -10,7 +10,7 @@ export type Item = {
 
 const GridList = ({ items }: { items: Item[] }) => {
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-24 w-full flex-grow">
+    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-24 w-full flex-grow aspect-[12/16]">
       {items.map(({ image, title, href }, i) => (
         <div key={`post-${i}`} className="relative">
           <Link href={href}>
@@ -18,7 +18,7 @@ const GridList = ({ items }: { items: Item[] }) => {
             {title && (
               <Typography
                 variant="h4"
-                className="p-6 uppercase text-center absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-secondary w-[101%]"
+                className="p-6 uppercase text-center absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-ternary w-[101%]"
               >
                 {title}
               </Typography>

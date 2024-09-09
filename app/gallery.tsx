@@ -4,7 +4,7 @@ const Gallery = () => {
   return (
     <Posts
       header="Galerie"
-      className="bg-ternary"
+      className="bg-secondary"
       pageNumber="05.c"
       posts={[
         {

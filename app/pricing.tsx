@@ -4,28 +4,60 @@ import { cn } from '@/lib/utils';
 
 const items = [
   {
-    text: 'Pilates Reformer',
-    price: '700 ,-',
+    text: 'Pilates, yoga',
+    price: '250 ,-',
   },
   {
     text: 'Barre',
-    price: '350 ,-',
+    price: '280 ,-',
   },
   {
-    text: 'Total Barre',
-    price: '450 ,-',
+    text: 'Reformer',
+    price: '600 ,-',
   },
   {
-    text: 'Pilates',
+    text: '',
+    price: '',
+  },
+  {
+    text: "Víkend barre 75'",
     price: '300 ,-',
   },
   {
-    text: 'Yoga',
-    price: '300 ,-',
+    text: '',
+    price: '',
   },
   {
-    text: '1 měsíc permanentka',
-    price: '?? ,-',
+    text: '2000 kredit',
+    price: '1900 ,-',
+  },
+  {
+    text: '3000 kredit',
+    price: '2800 ,-',
+  },
+  {
+    text: '4000 kredit',
+    price: '3650 ,-',
+  },
+  {
+    text: '',
+    price: '',
+  },
+  {
+    text: 'Individuální lekce reformer:',
+    price: '',
+  },
+  {
+    text: '1 osoba',
+    price: '1000 ,-',
+  },
+  {
+    text: '2 osoby',
+    price: '1700 ,-',
+  },
+  {
+    text: '3 osoby',
+    price: '2100 ,-',
   },
 ];
 
@@ -34,9 +66,17 @@ const Pricing = () => {
     <LecturePage className="bg-ternary" image="/other/barre.jpg" title="Ceník" page="03" id="Cenik">
       <div className="flex flex-col h-full justify-center ">
         {items.map(({ text, price }, i) => (
-          <div className={cn('grid grid-cols-2 gap-32', i === items.length - 1 ? 'mt-16' : '')} key={text}>
-            <Typography variant="h3">{text}</Typography>
-            <Typography variant="h3">{price}</Typography>
+          <div className={cn('grid grid-cols-[1fr_auto] gap-32 me-2 md:me-4 lg:me-6 xl:me-16')} key={text}>
+            {text ? (
+              <>
+                <Typography variant="h4" className="uppercase">
+                  {text}
+                </Typography>
+                <Typography variant="h4">{price}</Typography>
+              </>
+            ) : (
+              <br />
+            )}
           </div>
         ))}
       </div>

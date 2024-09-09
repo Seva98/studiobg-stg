@@ -17,11 +17,10 @@ export default function Home() {
     <main>
       <Classes />
       <Lectors />
-      <Contacts />
+      {/* <Contacts / */}
       <Blog />
       {/* <Workshopy /> */}
       <Gallery />
-      <Calendar />
     </main>
   );
 }

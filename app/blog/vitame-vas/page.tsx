@@ -10,7 +10,7 @@ Naše studio je zaměřeno především na Pilates reformery, barre, pilates a y
 A proč Balance & Glow? Protože toto jsou dvě velmi důležité věci, kterých chceme s Vámi - našimi klienty - dosáhnout. Důležitým faktorem je mít v životě balance a to ve všech ohledech. No a pak … pak se budete cítit skvěle a můžete jen zářit!
 `;
 
-const VitameVas = () => {
+const Article = () => {
   return (
     <div className="flex flex-col gap-8">
       <Handwritten>Thank you</Handwritten>
@@ -24,4 +24,4 @@ const VitameVas = () => {
   );
 };
 
-export default VitameVas;
+export default Article;

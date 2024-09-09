@@ -4,7 +4,7 @@ const Blog = () => {
   return (
     <Posts
       header="Blog"
-      className="bg-secondary"
+      className="bg-ternary"
       pageNumber="05.a"
       posts={[
         {
@@ -13,9 +13,29 @@ const Blog = () => {
           href: '/blog/vitame-vas#article',
         },
         {
+          title: 'Reformer',
+          image: '/other/reformer.jpg',
+          href: '/blog/reformer#article',
+        },
+        {
           title: 'Barre',
           image: '/foto/276A7000.jpg',
           href: '/blog/barre#article',
+        },
+        {
+          title: 'Allegro 1',
+          image: '/other/allegro-1.jpg',
+          href: '/blog/allergo-1#article',
+        },
+        {
+          title: 'Bala Heaven',
+          image: '/foto/276A7607.jpg',
+          href: '/blog/bala-heaven#article',
+        },
+        {
+          title: 'Lota',
+          image: '/foto/276A7607.jpg',
+          href: '/blog/lota#article',
         },
       ]}
     />
