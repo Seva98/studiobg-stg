@@ -9,27 +9,21 @@ const Gallery = () => {
       posts={[
         {
           image: '/foto/276A7528.jpg',
-          href: '',
         },
         {
           image: '/foto/276A7539.jpg',
-          href: '',
         },
         {
           image: '/foto/276A7523.jpg',
-          href: '',
         },
         {
           image: '/foto/276A7482.jpg',
-          href: '',
         },
         {
           image: '/foto/276A7519.jpg',
-          href: '',
         },
         {
           image: '/foto/276A7450.jpg',
-          href: '',
         },
       ]}
     />
