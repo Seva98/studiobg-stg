@@ -59,4 +59,8 @@
   a {
     @apply hover:opacity-80 transition-opacity;
   }
+
+  #article a {
+    @apply text-primary/70 italic;
+  }
 }

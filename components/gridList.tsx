@@ -10,11 +10,11 @@ export type Item = {
 
 const GridList = ({ items }: { items: Item[] }) => {
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-24 w-full flex-grow aspect-[12/16]">
+    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-24 w-full flex-grow ">
       {items.map(({ image, title, href }, i) => (
         <div key={`post-${i}`} className="relative">
           <Link href={href}>
-            <Image src={image} alt={title ?? `list-${i}`} className="w-full h-full object-cover" width={600} height={400} />
+            <Image src={image} alt={title ?? `list-${i}`} className="w-full h-full object-cover aspect-square" width={600} height={400} />
             {title && (
               <Typography
                 variant="h4"
