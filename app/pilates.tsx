@@ -6,8 +6,8 @@ const Pilates = () => {
     <LecturePage className="bg-ternary" image="/foto/276A7592.jpg" title="Pilates" page="01.a" id="Pilates">
       <div className="my-auto w-full flex flex-col gap-20">
         <Typography variant="lead" className="max-w-[60%]">
-          Pilates lekce je cvičení, které kombinuje sílu, flexibilitu a kontroluje stav a kvalitu dechu. Během lekce se často pracuje na podložce, anebo s
-          pomocí speciálních strojů, jako je Pilates reformer. Cvičení se zaměřuje na posílení hlubokých svalů břicha, zad a pánevního dna, což pomáhá zlepšit
+          Metoda Pilates je cvičení, které kombinuje sílu, flexibilitu a kontroluje kvalitu dechu. Během lekce se často pracuje na podložce, anebo s pomocí
+          speciálních strojů, jako je Pilates reformer. Cvičení se zaměřuje na posílení hlubokých svalů břicha, zad a pánevního dna, což pomáhá zlepšit
           stabilitu páteře a celkovou tělesnou koordinaci. Velký důraz se klade na dýchání a aktivaci středu těla.
         </Typography>
         <Typography variant="lead" className="max-w-[60%] self-center">
