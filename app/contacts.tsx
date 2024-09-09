@@ -29,7 +29,7 @@ const Contacts = ({ secondaryBg = false }: { secondaryBg?: boolean }) => {
           <ContactValue title="Telefon">
             <a href="tel:+420734677225">734 677 225</a>
           </ContactValue>
-          <ContactValue title="Adresa">Veleslavínová 4, Ostrava 📍</ContactValue>
+          <ContactValue title="Adresa">Veleslavínova 4, Ostrava 📍</ContactValue>
           <ContactValue title="Bankovní spojení">11122233/0800 </ContactValue>
         </div>
         <iframe

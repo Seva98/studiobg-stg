@@ -17,10 +17,10 @@ export default function Home() {
     <main>
       <Classes />
       {/* <Lectors /> */}
-      {/* <Contacts / */}
       <Blog />
       {/* <Workshopy /> */}
       <Gallery />
+      <Contacts secondaryBg />
     </main>
   );
 }
