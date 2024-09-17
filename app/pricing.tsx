@@ -35,32 +35,24 @@ const items = [
     text: '',
     price: '',
   },
-  // {
-  //   text: "Víkend barre 75'",
-  //   price: '300 ,-',
-  // },
-  // {
-  //   text: '',
-  //   price: '',
-  // },
-  // {
-  //   text: '2000 kredit',
-  //   price: '1900 ,-',
-  // },
-  // {
-  //   text: '3000 kredit',
-  //   price: '2800 ,-',
-  // },
-  // {
-  //   text: '4000 kredit',
-  //   price: '3650 ,-',
-  // },
-  // {
-  //   text: '',
-  //   price: '',
-  // },
   {
-    text: 'Individuální lekce reformer:',
+    text: 'Individuální lekce Barre:',
+    price: '',
+  },
+  {
+    text: '1 osoba',
+    price: '600 ,-',
+  },
+  {
+    text: '2 osoby',
+    price: '1000 ,-',
+  },
+  {
+    text: '',
+    price: '',
+  },
+  {
+    text: 'Individuální lekce Reformer:',
     price: '',
   },
   {
@@ -153,6 +145,9 @@ const Pricing = () => {
             )}
           </div>
         ))}
+        <Typography variant="small" className="mt-8 text-left">
+          Zvýhodněné ceny lekcí pouze do 14. října.
+        </Typography>
       </div>
     </LecturePage>
   );
