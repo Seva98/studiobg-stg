@@ -11,6 +11,7 @@ import Workshopy from './workshops';
 import Gallery from './gallery';
 import Pricing from './pricing';
 import Calendar from './calendar';
+import Script from 'next/script';
 
 export default function Home() {
   return (
@@ -21,6 +22,11 @@ export default function Home() {
       {/* <Workshopy /> */}
       <Gallery />
       <Contacts secondaryBg />
+      <Script id="google-ads-conversion" strategy="afterInteractive">
+        {`
+          gtag('event', 'conversion', {'send_to': 'AW-16679365058/B1DkCKi47dEZEMLTq5E-'});
+        `}
+      </Script>
     </main>
   );
 }
