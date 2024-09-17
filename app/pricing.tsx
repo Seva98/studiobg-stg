@@ -146,7 +146,7 @@ const Pricing = () => {
           </div>
         ))}
         <Typography variant="small" className="mt-8 text-left">
-          Zvýhodněné ceny lekcí pouze do 14. října.
+          Zvýhodněné ceny lekcí pouze do 13. října.
         </Typography>
       </div>
     </LecturePage>

@@ -14,6 +14,7 @@ type GroupedLinks = {
   href: string;
   text: string;
   children?: Link[];
+  desc?: string;
 };
 
 const links: GroupedLinks[] = [
@@ -28,6 +29,7 @@ const links: GroupedLinks[] = [
   {
     href: '/cenik#Cenik',
     text: 'Ceník',
+    desc: 'Zvýhodněné ceny lekcí pouze do 13. října.',
   },
   // {
   //   href: '/#Lektori',
@@ -76,11 +78,16 @@ const FirstPage = () => {
         </Link>
       </div>
       <div className="relative">
-        <div className="flex flex-col gap-4 uppercase border-l-4 border-[#68443c] p-4 absolute sm:top-[8rem]">
-          {links.map(({ href, text }) => (
-            <Link href={href} key={`link-${href}`}>
-              <Typography variant="h4">{text}</Typography>
-            </Link>
+        <div className="flex flex-col gap-4  border-l-4 border-[#68443c] p-4 absolute sm:top-[8rem]">
+          {links.map(({ href, text, desc }) => (
+            <div key={`div-${href}`} className="flex flex-col">
+              <Link href={href} key={`link-${href}`}>
+                <Typography variant="h4" className="uppercase">
+                  {text}
+                </Typography>
+              </Link>
+              {desc && <Typography variant="small">{desc}</Typography>}
+            </div>
           ))}
         </div>
         {/* <div className="hidden md:block absolute h-[85%] w-[90%] top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
