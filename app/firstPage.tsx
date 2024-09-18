@@ -35,6 +35,10 @@ const links: GroupedLinks[] = [
     text: 'Ceník',
     desc: 'Zvýhodněné ceny lekcí pouze do 13. října.',
   },
+  {
+    href: '/pronajem#Pronajem',
+    text: 'Pronájem prostor',
+  },
   // {
   //   href: '/#Lektori',
   //   text: 'Lektoři',
