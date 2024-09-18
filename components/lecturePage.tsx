@@ -12,6 +12,7 @@ const LecturePage = ({
   className,
   children,
   showNavigation = true,
+  isLecture = false,
   ...props
 }: {
   image: string;
@@ -19,6 +20,7 @@ const LecturePage = ({
   page: string;
   className: string;
   children: React.ReactNode;
+  isLecture?: boolean;
   showNavigation?: boolean;
 } & React.HTMLProps<HTMLDivElement>) => {
   return (
@@ -37,7 +39,7 @@ const LecturePage = ({
       <div className="flex flex-col  relative">
         <div className="flex gap-6 items-center">
           {showNavigation && (
-            <Link href="/" className="text-xl">
+            <Link href={isLecture ? '/' : '/#Logo'} className="text-xl">
               ←
             </Link>
           )}

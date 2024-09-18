@@ -3,7 +3,7 @@ import Typography from '@/components/ui/typography';
 
 const Pilates = () => {
   return (
-    <LecturePage className="bg-ternary" image="/foto/276A7592.jpg" title="Pilates" page="01.a" id="Pilates">
+    <LecturePage className="bg-ternary" image="/foto/276A7592.jpg" title="Pilates" page="01.a" id="Pilates" isLecture>
       <div className="my-auto w-full flex flex-col gap-20">
         <Typography variant="lead" className="max-w-[60%]">
           Metoda Pilates je cvičení, které kombinuje sílu, flexibilitu a kontroluje kvalitu dechu. Během lekce se často pracuje na podložce, anebo s pomocí

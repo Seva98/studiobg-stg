@@ -3,7 +3,7 @@ import Typography from '@/components/ui/typography';
 
 const Yoga = () => {
   return (
-    <LecturePage className="bg-ternary" image="/foto/276A7600.jpg" title="Yoga" page="01.e" id="Yoga">
+    <LecturePage className="bg-ternary" image="/foto/276A7600.jpg" title="Yoga" page="01.e" id="Yoga" isLecture>
       <div className="flex flex-col gap-6 my-auto">
         <Typography variant="lead">
           Jóga je v západní Evropě brána jako prostředek k větší flexibilitě, stabilitě a vyrovnání vnitřní energie. Hlubší filozofie pojednává o znalosti

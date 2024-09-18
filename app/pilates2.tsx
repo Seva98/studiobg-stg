@@ -13,7 +13,7 @@ const Pilates2 = () => {
     'PILATES - KURZ PRO ZAČÁTEČNÍKY - doporučujeme všem, kteří se cvičením a zdravým životním stylem teprve začínají. Jedná se o 18 po sobě jdoucích lekcí.',
   ];
   return (
-    <LecturePage className="bg-secondary" image="/foto/276A7594.jpg" title="Pilates" page="01.b" showNavigation={false}>
+    <LecturePage className="bg-secondary" image="/foto/276A7594.jpg" title="Pilates" page="01.b" showNavigation={false} isLecture>
       <div className="flex flex-col gap-6 my-auto">
         <Typography variant="lead">
           JUICY BEAUTY BOOTY - Nejdříve dosáhneme zvýšené tepové frekvence a následně začneme formovat naše těla pomocí cvičebních prvků z metody pilates. Tato
