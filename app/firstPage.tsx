@@ -61,7 +61,7 @@ const FirstPage = () => {
   const variableHeader = `text-[20px] sm:text-[24px] md:text-[30px]`;
 
   return (
-    <Section className=" md:grid md:grid-cols-2 text-primary bg-secondary">
+    <Section className=" md:grid md:grid-cols-2 text-primary bg-secondary" id="Logo">
       <div className="relative min-h-[25vh] sm:min-h-[50vh] md:me-8">
         <Slideshow />
         {/* <Image

@@ -9,7 +9,7 @@ export default function ArticleLayout({
 }>) {
   return (
     <main className=" relative" id="article">
-      <Link href="/" className="flex gap-1 items-center absolute left-2 top-4 text-primary">
+      <Link href="/#Logo" className="flex gap-1 items-center absolute left-2 top-4 text-primary">
         <ArrowLeftIcon /> Hlavní stránka
       </Link>
       <div>{children}</div>
