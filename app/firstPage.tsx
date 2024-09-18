@@ -27,6 +27,10 @@ const links: GroupedLinks[] = [
     text: 'Rozvrh lekcí',
   },
   {
+    href: '/workshopy#zenamu-workshops',
+    text: 'Workshopy',
+  },
+  {
     href: '/cenik#Cenik',
     text: 'Ceník',
     desc: 'Zvýhodněné ceny lekcí pouze do 13. října.',
