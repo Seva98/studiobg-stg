@@ -4,6 +4,7 @@ import Image from 'next/image';
 import { cn } from '@/lib/utils';
 import Link from 'next/link';
 import Slideshow from './slideshow';
+import { isReleased } from '@/utils/isReleased';
 
 type Link = {
   href: string;
@@ -33,7 +34,7 @@ const links: GroupedLinks[] = [
   {
     href: '/cenik#Cenik',
     text: 'Ceník',
-    desc: 'Zvýhodněné ceny lekcí pouze do 13. října.',
+    desc: isReleased() ? '' : 'Zvýhodněné ceny lekcí pouze do 13. října.',
   },
   {
     href: '/pronajem#Pronajem',
@@ -78,7 +79,10 @@ const FirstPage = () => {
           height={450}
           className="w-[300px] h-[450px] object-contain absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
         /> */}
-        <Link href="/" className="flex gap-0 sm:gap-4 absolute top-0 left-10 items-center flex-col md:flex-row">
+        <Link
+          href="/"
+          className="flex gap-0 sm:gap-4 absolute top-0 left-1/2 transform -translate-x-1/2 sm:left-10 sm:transform-none items-center flex-col sm:flex-row"
+        >
           <Image src="/bg_logo_invis_2.svg" alt="Logo" width={80} height={120} className="w-[80px] h-[120px] object-contain" />
           <Typography variant="h3" className={cn('whitespace-nowrap uppercase mt-0 sm:mt-4', variableHeader)}>
             Veleslavínova 4
