@@ -1,74 +1,7 @@
 import LecturePage from '@/components/lecturePage';
 import Typography from '@/components/ui/typography';
 import { cn } from '@/lib/utils';
-import { isReleased } from '@/utils/isReleased';
 
-const itemsOld = [
-  {
-    text: 'Pilates, yoga',
-    price: '200 ,-',
-  },
-  {
-    text: '',
-    price: '',
-  },
-  {
-    text: 'Barre',
-    price: '220 ,-',
-  },
-  {
-    text: '',
-    price: '',
-  },
-  {
-    text: 'Reformer',
-    price: '400 ,-',
-  },
-  {
-    text: '',
-    price: '',
-  },
-  {
-    text: '',
-    price: '',
-  },
-  {
-    text: '',
-    price: '',
-  },
-  {
-    text: 'Individuální lekce Barre:',
-    price: '',
-  },
-  {
-    text: '1 osoba',
-    price: '600 ,-',
-  },
-  {
-    text: '2 osoby',
-    price: '1000 ,-',
-  },
-  {
-    text: '',
-    price: '',
-  },
-  {
-    text: 'Individuální lekce Reformer:',
-    price: '',
-  },
-  {
-    text: '1 osoba',
-    price: '1000 ,-',
-  },
-  {
-    text: '2 osoby',
-    price: '1700 ,-',
-  },
-  {
-    text: '3 osoby',
-    price: '2100 ,-',
-  },
-];
 const itemsNew = [
   {
     text: 'Pilates, yoga',
@@ -169,12 +102,10 @@ const itemsNew = [
 ];
 
 const Pricing = () => {
-  const pricingItems = isReleased() ? itemsNew : itemsOld;
-
   return (
     <LecturePage className="bg-ternary" image="/other/barre.jpg" title="Ceník" page="03" id="Cenik">
       <div className="flex flex-col h-full justify-center  my-4 gap">
-        {pricingItems.map(({ text, price }, i) => (
+        {itemsNew.map(({ text, price }, i) => (
           <div className={cn('grid grid-cols-[1fr_auto] gap-32 me-2 md:me-4 lg:me-6 xl:me-16')} key={text}>
             {text ? (
               <>
@@ -188,9 +119,6 @@ const Pricing = () => {
             )}
           </div>
         ))}
-        {/* <Typography variant="small" className="mt-8 text-left">
-          Zvýhodněné ceny lekcí pouze do 13. října.
-        </Typography> */}
       </div>
     </LecturePage>
   );

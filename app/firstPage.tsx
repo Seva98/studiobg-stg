@@ -4,7 +4,6 @@ import Image from 'next/image';
 import { cn } from '@/lib/utils';
 import Link from 'next/link';
 import Slideshow from './slideshow';
-import { isReleased } from '@/utils/isReleased';
 
 type Link = {
   href: string;
@@ -34,7 +33,7 @@ const links: GroupedLinks[] = [
   {
     href: '/cenik#Cenik',
     text: 'Ceník',
-    desc: isReleased() ? '' : 'Zvýhodněné ceny lekcí pouze do 13. října.',
+    desc: '',
   },
   {
     href: '/pronajem#Pronajem',
