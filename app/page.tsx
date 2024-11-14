@@ -12,6 +12,7 @@ import Gallery from './gallery';
 import Pricing from './pricing';
 import Calendar from './calendar';
 import Script from 'next/script';
+import Modal from './modal';
 
 export default function Home() {
   return (
@@ -22,6 +23,7 @@ export default function Home() {
       {/* <Workshopy /> */}
       <Gallery />
       <Contacts secondaryBg />
+      <Modal />
       <Script id="google-ads-conversion" strategy="afterInteractive">
         {`
           gtag('event', 'conversion', {'send_to': 'AW-16679365058/B1DkCKi47dEZEMLTq5E-'});

@@ -18,7 +18,7 @@ const ContactValue = ({ title, children }: { title: string; children: React.Reac
 const Contacts = ({ secondaryBg = false }: { secondaryBg?: boolean }) => {
   return (
     <Section className={`${secondaryBg ? 'bg-secondary' : 'bg-ternary'} grid lg:grid-cols-[4fr_5fr] gap-6 `} padding="lg" id="Kontakty">
-      <div className="flex flex-col h-full gap-4 uppercase text-lg tracking-tighter font-thin">
+      <div className="flex flex-col h-full gap-4 uppercase text-lg tracking-tighter font-thin ">
         <Typography variant="h1" className="uppercase ">
           Kontakty
         </Typography>
@@ -55,7 +55,7 @@ const Contacts = ({ secondaryBg = false }: { secondaryBg?: boolean }) => {
           <ContactValue title="Bankovní spojení">11122233/0800 </ContactValue>
         </div> */}
 
-        <form action={sendContactForm} className="flex gap-1 flex-col w-3/4 bg-orange-50 p-8 shadow-md border border-gray-200 h-1/2">
+        <form action={sendContactForm} className="flex gap-1 flex-col w-full md:w-3/4 bg-orange-50 p-2 md:p-8 shadow-md border border-gray-200 h-full md:h-1/2">
           <Typography>Kontaktujte nás</Typography>
           <Input type="text" name="name" required placeholder="Jméno:" className="border-none shadow-none text-xl placeholder:text-xl" />
           <Input type="email" name="email" required placeholder="Email:" className="border-none shadow-none text-xl placeholder:text-xl" />

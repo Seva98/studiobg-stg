@@ -10,7 +10,7 @@ type Props = {
 
 const Section = React.forwardRef<HTMLElement, Props & React.HTMLProps<HTMLDivElement>>(({ children, className, padding = 'md', withLogo, ...props }, ref) => {
   return (
-    <section ref={ref} className={cn('min-h-screen relative', padding === 'md' ? 'p-6' : 'p-16', className)} {...props}>
+    <section ref={ref} className={cn('min-h-screen relative', padding === 'md' ? 'p-2 md:p-6' : 'p-4 md:p-16', className)} {...props}>
       {children}
     </section>
   );
