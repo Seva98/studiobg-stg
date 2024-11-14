@@ -23,7 +23,7 @@ export default function Home() {
       {/* <Workshopy /> */}
       <Gallery />
       <Contacts secondaryBg />
-      <Modal />
+      {/* <Modal /> */}
       <Script id="google-ads-conversion" strategy="afterInteractive">
         {`
           gtag('event', 'conversion', {'send_to': 'AW-16679365058/B1DkCKi47dEZEMLTq5E-'});

@@ -3,7 +3,7 @@
 import React, { useEffect, useState } from 'react';
 import Image from 'next/image';
 
-const Modal = () => {
+const Modal = ({ openAgain = false, onClose }: { openAgain?: boolean; onClose?: () => void }) => {
   const [isOpen, setIsOpen] = useState(false);
 
   useEffect(() => {
@@ -38,10 +38,13 @@ const Modal = () => {
     return null;
   };
 
-  const closeOverlay = () => setIsOpen(false);
+  const closeOverlay = () => {
+    setIsOpen(false);
+    if (onClose) onClose();
+  };
 
   return (
-    isOpen && (
+    (isOpen || openAgain) && (
       <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-75 p-4 cursor-pointer" onClick={closeOverlay}>
         <div className="relative max-w-full max-h-full mx-auto p-4 flex justify-center items-center" onClick={(e) => e.stopPropagation()}>
           <div className="hidden md:flex relative w-full h-full max-w-full max-h-full justify-center items-center">
