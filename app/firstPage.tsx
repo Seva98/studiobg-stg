@@ -25,7 +25,7 @@ const links: GroupedLinks[] = [
   {
     href: '/rozvrh#zenamu-calendar',
     text: 'Rozvrh lekcí',
-    desc: 'Zavřeno do 3. ledna',
+    // desc: 'Zavřeno do 3. ledna',
   },
   {
     href: '/workshopy#zenamu-workshops',
