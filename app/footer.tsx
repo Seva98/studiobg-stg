@@ -14,7 +14,7 @@ const Footer = () => {
         <Typography variant="h4" className="uppercase">
           |
         </Typography>
-        <ModalLink />
+        {/* <ModalLink /> */}
       </div>
       <hr className="my-8" />© {new Date().getFullYear()} All rights reserved
       <br />

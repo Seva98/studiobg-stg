@@ -25,6 +25,7 @@ const links: GroupedLinks[] = [
   {
     href: '/rozvrh#zenamu-calendar',
     text: 'Rozvrh lekcí',
+    desc: 'Zavřeno do 3. ledna',
   },
   {
     href: '/workshopy#zenamu-workshops',
@@ -33,7 +34,6 @@ const links: GroupedLinks[] = [
   {
     href: '/cenik#Cenik',
     text: 'Ceník',
-    desc: '',
   },
   {
     href: '/pronajem#Pronajem',
@@ -97,7 +97,11 @@ const FirstPage = () => {
                   {text}
                 </Typography>
               </Link>
-              {desc && <Typography variant="small">{desc}</Typography>}
+              {desc && (
+                <Typography variant="small" className="text-red-600">
+                  {desc}
+                </Typography>
+              )}
             </div>
           ))}
         </div>
