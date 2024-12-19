@@ -13,7 +13,7 @@ const ModalLink = () => {
           Akce na vstupy
         </Typography>
       </div>
-      {/* <Modal openAgain={openAgain} onClose={() => setOpenAgain(false)} /> */}
+      <Modal openAgain={openAgain} onClose={() => setOpenAgain(false)} />
     </>
   );
 };
