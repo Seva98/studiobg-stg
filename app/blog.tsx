@@ -8,6 +8,11 @@ const Blog = () => {
       pageNumber="05.a"
       posts={[
         {
+          title: 'Víkendová akce studia',
+          image: '/blog/vikendova-akce-studia/article2a.jpeg',
+          href: '/blog/vikendova-akce-studia#article',
+        },
+        {
           title: 'Vítame Vás',
           image: '/foto/276A7532.jpg',
           href: '/blog/vitame-vas#article',

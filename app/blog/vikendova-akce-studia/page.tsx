@@ -35,20 +35,20 @@ const Article = () => {
         <Typography variant="h2">Pumpkin Spice Barre</Typography>
         <Markdown content={article1} />
         <div className="grid grid-cols-2 gap-16">
-          <Image src="/blog/prvni-3-mesice/article1a.jpeg" alt="article1a" className="object-cover h-full" width={600} height={846} />
-          <Image src="/blog/prvni-3-mesice/article1b.jpeg" alt="article1b" className="object-cover h-full" width={600} height={846} />
+          <Image src="/blog/vikendova-akce-studia/article1a.jpeg" alt="article1a" className="object-cover h-full" width={600} height={846} />
+          <Image src="/blog/vikendova-akce-studia/article1b.jpeg" alt="article1b" className="object-cover h-full" width={600} height={846} />
         </div>
         <Typography variant="h2">Gingerbread Barre</Typography>
         <Markdown content={article2} />
         <div className="grid grid-cols-2 gap-16">
-          <Image src="/blog/prvni-3-mesice/article2a.jpeg" alt="article2a" className="object-cover h-full" width={600} height={846} />
-          <Image src="/blog/prvni-3-mesice/article2b.jpeg" alt="article2b" className="object-cover h-full" width={600} height={846} />
+          <Image src="/blog/vikendova-akce-studia/article2a.jpeg" alt="article2a" className="object-cover h-full" width={600} height={846} />
+          <Image src="/blog/vikendova-akce-studia/article2b.jpeg" alt="article2b" className="object-cover h-full" width={600} height={846} />
         </div>
         <Typography variant="h2">Dance like a Beyoncé</Typography>
         <Markdown content={article3} />
         <div className="grid grid-cols-2 gap-16">
-          <Image src="/blog/prvni-3-mesice/article3a.jpeg" alt="article3a" className="object-cover h-full" width={600} height={846} />
-          <Image src="/blog/prvni-3-mesice/article3b.jpeg" alt="article3b" className="object-cover h-full" width={600} height={846} />
+          <Image src="/blog/vikendova-akce-studia/article3a.jpeg" alt="article3a" className="object-cover h-full" width={600} height={846} />
+          <Image src="/blog/vikendova-akce-studia/article3b.jpeg" alt="article3b" className="object-cover h-full" width={600} height={846} />
         </div>
       </div>
       <Handwritten variant="signature" className="ms-auto">
