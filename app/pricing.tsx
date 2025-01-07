@@ -117,10 +117,10 @@ const Pricing = () => {
           <div className={cn('grid grid-cols-[1fr_auto] gap-32 me-2 md:me-4 lg:me-6 xl:me-16')} key={text}>
             {text ? (
               <>
-                <Typography variant="h5" className="uppercase">
+                <Typography variant="h6" className="uppercase">
                   {text}
                 </Typography>
-                <Typography variant="h5">{price}</Typography>
+                <Typography variant="h6">{price}</Typography>
               </>
             ) : (
               <div className="h-6" />
