@@ -30,7 +30,7 @@ export const sendEmail = async (emailData: EmailData) => {
   };
 
   const transporter = nodemailer.createTransport({
-    host: 'smtp.forpsi.com',
+    host: 'smtp.cesky-hosting.cz',
     secure: true,
     port: 465,
     auth: auth,

@@ -5,7 +5,6 @@ import { useState } from 'react';
 
 const ModalLink = () => {
   const [openAgain, setOpenAgain] = useState(false);
-  return null;
   return (
     <>
       <div onClick={() => setOpenAgain(true)} className="cursor-pointer">

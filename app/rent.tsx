@@ -5,15 +5,15 @@ import { cn } from '@/lib/utils';
 const items = [
   {
     text: 'Do 5 osob',
-    price: '750 ,-',
+    price: '750 ,- / 2 hod',
   },
   {
     text: '5-10 osob',
-    price: '1500 ,-',
+    price: '1500 ,- / 2 hod',
   },
   {
     text: '11 osob a více',
-    price: '2500 ,-',
+    price: '2500 ,- / 2 hod',
   },
 ];
 
@@ -35,6 +35,10 @@ const Rent = () => {
             )}
           </div>
         ))}
+        <div />
+        <Typography>
+          V případě individuální nabídky nás prosím kontaktujte: <a href="mailto:letmeglow@studiobg.cz">letmeglow@studiobg.cz</a>
+        </Typography>
       </div>
     </LecturePage>
   );

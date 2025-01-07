@@ -15,4 +15,6 @@ export const sendContactForm = async (formData: FormData) => {
     text: `Email od <a href="mailto:${senderEmail}">${senderEmail}</a>\n\n${message}`,
     subject: `Kontaktní formulář - ${name}`,
   });
+
+  return true;
 };

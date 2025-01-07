@@ -16,8 +16,12 @@ const itemsNew = [
     price: '270 ,-',
   },
   {
-    text: 'Lunch Time Yoga - EN/CZ',
+    text: 'Jóga pro začátečníky a těhotné',
     price: '250 ,-',
+  },
+  {
+    text: 'Fyzio Pilates',
+    price: '240 ,-',
   },
   {
     text: 'Barre',
@@ -26,6 +30,10 @@ const itemsNew = [
   {
     text: 'Reformer',
     price: '560 ,-',
+  },
+  {
+    text: '10 vstupů na podložkové lekce',
+    price: '2500 ,-',
   },
   {
     text: '',

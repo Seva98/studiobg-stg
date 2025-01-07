@@ -12,7 +12,7 @@ const Yoga = () => {
         <Typography variant="lead">Naše studio se zaměřuje na rychlejší typy jógy, které jsou vedeny v 60 či 75 minutových intervalech.</Typography>
         <Typography variant="lead">V rozvrhu naleznete tyto kurzy:</Typography>
         <Typography variant="lead">
-          YOGALATES - Kombinace jógy a pilates. Nejdříve tělo připravíme na pohyb, následuje sekvence vinyasy jógy, po zahřátí začneme zpevňovat jednotlivé
+          YOGA & PILATES - Kombinace jógy a pilates. Nejdříve tělo připravíme na pohyb, následuje sekvence vinyasy jógy, po zahřátí začneme zpevňovat jednotlivé
           partie díky izolovaným cvikům pilates a nakonec se pořádně protáhneme. Lekce nekončí šavásanou, jen si popřejeme krásný den. Lekce jsou vhodné pro
           začátečníky, jen je potřeba vydržet první chvíle nepohody.
         </Typography>
