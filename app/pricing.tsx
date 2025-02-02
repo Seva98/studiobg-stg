@@ -16,10 +16,6 @@ const itemsNew = [
     price: '270 ,-',
   },
   {
-    text: 'Jóga pro začátečníky a těhotné',
-    price: '250 ,-',
-  },
-  {
     text: 'Fyzio Pilates',
     price: '240 ,-',
   },
