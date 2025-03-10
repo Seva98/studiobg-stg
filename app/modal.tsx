@@ -8,13 +8,13 @@ const Modal = ({ openAgain = false, onClose }: { openAgain?: boolean; onClose?: 
 
   useEffect(() => {
     const tenMinutes = 10 * 60 * 1000;
-    const lastDisplayed = getCookie('modal_last_displayed');
+    const lastDisplayed = getCookie('modal_last_displayed_2');
 
     // Check if the modal was last displayed more than 10 minutes ago
     if (!lastDisplayed || Date.now() - parseInt(lastDisplayed) > tenMinutes) {
       const timer = setTimeout(() => {
         setIsOpen(true);
-        setCookie('modal_last_displayed', Date.now().toString(), 1 / 144); // expires in 10 minutes
+        setCookie('modal_last_displayed_2', Date.now().toString(), 1 / 144); // expires in 10 minutes
       }, 3000);
 
       return () => clearTimeout(timer); // Clear timeout on unmount
@@ -48,7 +48,17 @@ const Modal = ({ openAgain = false, onClose }: { openAgain?: boolean; onClose?: 
       <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-75 p-4 cursor-pointer" onClick={closeOverlay}>
         <div className="relative max-w-full max-h-full mx-auto p-4 flex justify-center items-center" onClick={(e) => e.stopPropagation()}>
           <div className="hidden md:flex relative w-full h-full max-w-full max-h-full justify-center items-center">
-            <Image
+            <video
+              className="object-contain"
+              style={{ maxHeight: 'calc(100vh - 20vh)', maxWidth: 'calc(100vw - 5px)' }}
+              autoPlay
+              loop
+              muted
+              playsInline
+              onClick={closeOverlay}
+              src="/video.mov"
+            />
+            {/* <Image
               src="/modal.jpg"
               alt="Selected Material Image"
               layout="intrinsic"
@@ -57,10 +67,20 @@ const Modal = ({ openAgain = false, onClose }: { openAgain?: boolean; onClose?: 
               className="object-contain"
               style={{ maxHeight: 'calc(100vh - 20vh)', maxWidth: 'calc(100vw - 5px)' }}
               onClick={closeOverlay}
-            />
+            /> */}
           </div>
           <div className="flex md:hidden relative w-full h-full max-w-full max-h-full justify-center items-center">
-            <Image
+            <video
+              className="object-contain"
+              style={{ maxHeight: 'calc(100vh - 20vh)', maxWidth: 'calc(100vw - 5px)' }}
+              autoPlay
+              loop
+              muted
+              playsInline
+              onClick={closeOverlay}
+              src="/video.mov"
+            />
+            {/* <Image
               src="/modal2.jpg"
               alt="Selected Material Image"
               layout="intrinsic"
@@ -69,7 +89,7 @@ const Modal = ({ openAgain = false, onClose }: { openAgain?: boolean; onClose?: 
               className="object-contain"
               style={{ maxHeight: 'calc(100vh - 20vh)', maxWidth: 'calc(100vw - 5px)' }}
               onClick={closeOverlay}
-            />
+            /> */}
           </div>
         </div>
       </div>

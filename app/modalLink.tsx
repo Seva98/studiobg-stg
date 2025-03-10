@@ -9,7 +9,7 @@ const ModalLink = () => {
     <>
       <div onClick={() => setOpenAgain(true)} className="cursor-pointer">
         <Typography variant="h4" className="uppercase">
-          Akce na vstupy
+          Wellness Pilates Weekend
         </Typography>
       </div>
       <Modal openAgain={openAgain} onClose={() => setOpenAgain(false)} />
