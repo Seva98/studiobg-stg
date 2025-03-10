@@ -29,7 +29,7 @@ const itemsNew = [
   },
   {
     text: '10 vstupů na podložkové lekce',
-    price: '2500 ,-',
+    price: '2200 ,-',
   },
   {
     text: '',
