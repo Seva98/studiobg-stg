@@ -11,10 +11,10 @@ const Footer = () => {
             Provozní řád
           </Typography>
         </Link>
-        <Typography variant="h4" className="uppercase">
+        {/* <Typography variant="h4" className="uppercase">
           |
-        </Typography>
-        <ModalLink />
+        </Typography> */}
+        {/* <ModalLink /> */}
       </div>
       <hr className="my-8" />© {new Date().getFullYear()} All rights reserved
       <br />
