@@ -23,7 +23,7 @@ const links: GroupedLinks[] = [
     text: 'Lekce',
   },
   {
-    href: '/rozvrh#zenamu-calendar',
+    href: 'https://studiobg.isportsystem.cz',
     text: 'Rozvrh lekcí',
     // desc: 'Zavřeno do 3. ledna',
   },
